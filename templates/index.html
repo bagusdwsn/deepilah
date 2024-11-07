@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeePilah: Pilah Sampah dengan Deep Learning</title>
+    <style>
+        body {
+            background-color: #d1f7d9;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: #333;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 95%;
+            max-width: 600px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .container:hover {
+            transform: scale(1.02);
+        }
+        h1 {
+            margin-bottom: 20px;
+            color: #1a5d1a; 
+            font-size: 28px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        input[type="file"] {
+            margin-bottom: 20px;
+            padding: 12px;
+            border: 2px solid #1a5d1a; 
+            border-radius: 8px;
+            outline: none;
+            font-size: 16px;
+            color: #333;
+            width: 100%;
+            box-sizing: border-box;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+        input[type="file"]:focus {
+            border-color: #2ecc71; 
+            box-shadow: 0 0 8px rgba(46, 204, 113, 0.4);
+        }
+        button {
+            background-color: #2ecc71; 
+            color: #ffffff;
+            border: none;
+            padding: 14px 28px;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+            font-weight: 600;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        button:hover {
+            background-color: #27ae60; 
+            transform: scale(1.05);
+        }
+        button:active {
+            background-color: #1e8449; 
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>DeePilah: Pilah Sampah dengan Deep Learning</h1>
+        <form action="/" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" required>
+            <button type="submit">Pilah</button>
+        </form>
+    </div>
+</body>
+</html>
